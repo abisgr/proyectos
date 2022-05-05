@@ -1,0 +1,166 @@
+
+body{
+    background-image : url(../../images/background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Roboto Mono', monospace;
+}
+
+main{
+    width: 100%;
+    padding-top: 100px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.contenedorcajas{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+
+}
+
+.contenedorcajas div{
+    border-radius: 10px;
+}
+
+.cajatrasera{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color:rgba(213, 21, 220, 0.283);
+}
+
+.cajatrasera div{
+    margin: 100px 40px;
+    color: rgb(255, 255, 255);
+    transition: all 500ms;
+}
+
+.cajatrasera div p,
+.cajatrasera div button{
+    margin-top: 30px;
+}
+
+.cajatrasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.cajatrasera button{
+    padding: 10px 40px;
+    border: 2px solid floralwhite;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+    border-radius: 5px;
+}
+
+.cajatrasera button:hover{
+    background: floralwhite;
+    color: cornflowerblue;
+}
+
+
+/* */
+
+.contenedor_login_register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+}
+
+.contenedor_login_register form{
+    width: 100%;
+    padding: 80px 20px;
+    background-color: aliceblue;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor_login_register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.contenedor_login_register form input{
+    width: 95%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: rgba(241, 234, 241, 0.882);
+    outline: none;
+    font-size: 16px;
+}
+
+.contenedor_login_register form input::placeholder{
+    color: rgb(0, 0, 0); 
+}
+
+.contenedor_login_register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    cursor: pointer;
+    outline: none;
+}
+
+.formulario_login{
+    opacity: 1;
+    display: block;
+}
+
+.formulario_register{
+    display: none;
+    padding-top: 20px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .cajatrasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .cajatrasera div{
+        margin: 0px;
+        text-align: center;
+    
+    }
+
+    .contenedor_login_register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor_login_register form{
+        position: relative;
+    }
+
+
+}
